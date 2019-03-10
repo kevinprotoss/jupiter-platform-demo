@@ -32,7 +32,7 @@ const readFile = (blob) => Observable.create(obs => {
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-  @Input() private sidenav: MatSidenav;
+  @Input() public sidenav: MatSidenav;
   
   constructor(private analysisService: AnalysisService) {
   }

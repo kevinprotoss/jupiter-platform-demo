@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'dayline-report'`, () => {
+  it(`should have as title 'jupiter-platform'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('dayline-report');
+    expect(app.title).toEqual('jupiter-platform');
   });
 
   it('should render title in a h1 tag', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to dayline-report!');
+    expect(compiled.querySelector('h1').textContent).toContain('Welcome to jupiter-platform!');
   });
 });
