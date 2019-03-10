@@ -13,7 +13,7 @@
       </mat-select>
     </mat-form-field>
     <div class="d-flex justify-content-center">
-      <div class="mt-5 spinner-border text-primary" style="width: 5rem; height: 5rem;" role="status" [hidden]="!analysisService.isLoading">
+      <div class="mt-5 spinner-border text-primary" style="width: 5rem; height: 5rem;" role="status" [hidden]="!showSpinner()">
         <span class="sr-only">Loading...</span>
       </div>
     </div>

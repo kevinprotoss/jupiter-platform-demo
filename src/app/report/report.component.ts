@@ -41,6 +41,10 @@ export class ReportComponent implements OnInit {
   ngOnInit() {
   }
 
+  showSpinner() {
+    return this.analysisService.isLoading;
+  }
+
   getThsList() {
     return this.analysisService.getThsList();
   }
