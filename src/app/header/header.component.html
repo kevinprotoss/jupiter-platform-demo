@@ -1,0 +1,8 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button (click)="sidenav.toggle()"><mat-icon>menu</mat-icon></button>
+  <h1 class="app-name">木星量化平台</h1>
+  <input #csvInput hidden="true" type="file" onclick="this.value=null" (change)="csvInputChange($event)" accept=".csv"/>
+  <button mat-icon-button class="ml-auto" (click)="csvInput.click()">
+    <mat-icon aria-label="Upload">backup</mat-icon>
+  </button>
+</mat-toolbar>
