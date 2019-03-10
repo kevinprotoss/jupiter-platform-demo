@@ -12,6 +12,11 @@
         <mat-option value="option3">Option 3</mat-option>
       </mat-select>
     </mat-form-field>
+    <div class="d-flex justify-content-center">
+      <div class="mt-5 spinner-border text-primary" style="width: 5rem; height: 5rem;" role="status" [hidden]="!analysisService.isLoading">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
     <mat-list class="mh overflow-auto">
       <mat-list-item *ngFor="let ths of getThsList()">
         <h4 mat-line>{{ths.name}}</h4>

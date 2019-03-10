@@ -182,6 +182,7 @@ const thsCodeList = [
 export class AnalysisService {
   db: any;
   thsList: Array<Ths> = [];
+  isLoading: boolean = false;
 
   constructor() {
     this.db = new loki('index.db', {
@@ -213,6 +214,10 @@ export class AnalysisService {
       }
       this.thsList = thsList;
     });
+  }
+
+  toggleLoading() {
+    this.isLoading = !this.isLoading;
   }
 
   getThsList() {

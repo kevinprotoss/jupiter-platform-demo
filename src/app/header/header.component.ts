@@ -38,9 +38,11 @@ export class HeaderComponent {
   }
 
   csvInputChange(event) {
+    this.analysisService.toggleLoading();
     let file = event.target.files[0];
     readFile(file).subscribe((csvText) => {
       this.analysisService.loadDatabase(csvText);
+      this.analysisService.toggleLoading();
     });
   }
 
